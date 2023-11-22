@@ -7,7 +7,7 @@ import { featureKey, siteCode, visitorCode } from "./constants";
 const configuration = {
    updateInterval: 1,
 };
-const client = new KameleoonClient(siteCode, configuration);
+const client = new KameleoonClient({siteCode, configuration});
 
 async function init(): Promise<void> {
   // -- Initialize the SDK
